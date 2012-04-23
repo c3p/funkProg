@@ -1,0 +1,19 @@
+Notepad++ und ghci:
+
+
+Create a directory to store your Windows ghci configuration file. On Windows 7, the directory you create should be C:\Users\<UserName>\AppData\roaming\ghc.
+
+(On Windows XP create C:\Documents and Settings\<UserName>\Application Data\ghc.)
+In that directory, use Notepad++ to create a plain text file named ghci.conf.
+Put the following in the file:
+
+:set editor "C:\Program Files\Notepad++\Notepad++.exe"
+:cd <full path to the folder where you will put Haskell files>
+
+eventuell muss Program Files angepasst werden. einfach korrekten pfad aus der adressleist des explorers kopieren.
+being sure to
+
+    start each line with a colon, :
+    use the correct path to your Notepad++ executable, wrapped in quotes
+    use the correct path to whatever folder you want to use for your Haskell programs WITHOUT quotes
+
